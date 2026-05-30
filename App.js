@@ -274,7 +274,7 @@ function DataExplorer({ sid, columns, totalRows, onColsChange, onRowsChange }) {
                 <ResponsiveContainer width="100%" height={120}>
                   <BarChart data={statData.top.map(([v,c])=>({name:String(v).slice(0,10),count:c}))} layout="vertical" margin={{left:0,right:4,top:0,bottom:0}}>
                     <XAxis type="number" tick={{fontSize:9,fill:C.muted}} tickLine={false}/>
-                    <YAxis type="category" dataKey="name" tick={{fontSize:9,fill:C.sec}} width:56/>
+                    <YAxis type="category" dataKey="name" tick={{fontSize:9,fill:C.sec}} width={56}/>
                     <Bar dataKey="count" fill={C.orange} radius={[0,3,3,0]}/>
                   </BarChart>
                 </ResponsiveContainer>
